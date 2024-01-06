@@ -24,11 +24,11 @@ under the License.
 
     <parent>
         <groupId>org.refutix</groupId>
-        <artifactId>flink-sql-template-jar</artifactId>
+        <artifactId>flink-sql-runner</artifactId>
         <version>0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>flink-sql-template-jar-common</artifactId>
+    <artifactId>flink-sql-runner-common</artifactId>
 
     <properties>
         <flink.version>1.17.2</flink.version>
@@ -50,6 +50,23 @@ under the License.
             <artifactId>flink-table-api-java</artifactId>
             <version>${flink.version}</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-runtime</artifactId>
+            <version>${flink.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-table-runtime</artifactId>
+            <version>${flink.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-table-planner-loader</artifactId>
+            <version>${flink.version}</version>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
@@ -74,6 +91,12 @@ under the License.
             <artifactId>log4j-core</artifactId>
             <version>${log4j.version}</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.24</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 
