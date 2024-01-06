@@ -23,11 +23,9 @@ under the License.
     <modelVersion>4.0.0</modelVersion>
 
     <modules>
-        <module>flink-sql-template-jar-common</module>
-        <module>flink-sql-template-jar-1.19</module>
-        <module>flink-sql-template-jar-1.18</module>
-        <module>flink-sql-template-jar-1.17</module>
-        <module>flink-sql-template-jar-1.16</module>
+        <module>flink-sql-runner-common</module>
+        <module>flink-sql-runner-1.17</module>
+        <module>flink-sql-runner-1.16</module>
     </modules>
 
     <parent>
@@ -37,7 +35,7 @@ under the License.
     </parent>
 
     <groupId>org.refutix</groupId>
-    <artifactId>flink-sql-template-jar</artifactId>
+    <artifactId>flink-sql-runner</artifactId>
 
     <version>0.1-SNAPSHOT</version>
 
